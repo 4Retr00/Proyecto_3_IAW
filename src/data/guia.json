@@ -1,0 +1,56 @@
+[
+  {
+    "enlace": "routing",
+    "titulo": "Routing",
+    "descripcion": "Sistema de enrutamiento limpio y expresivo",
+    "contenido": "Route::get('/usuarios', function () {\n    return User::all();\n});\n\nRoute::resource('posts', PostController::class);"
+  },
+  {
+    "enlace": "eloquent",
+    "titulo": "Eloquent ORM",
+    "descripcion": "Trabaja con la base de datos como objetos",
+    "contenido": "User::with('posts')->where('active', 1)->get();\n\nclass User extends Model {\n    public function posts() {\n        return $this->hasMany(Post::class);\n    }\n}"
+  },
+  {
+    "enlace": "blade",
+    "titulo": "Blade",
+    "descripcion": "Motor de plantillas ligero y potente",
+    "contenido": "@foreach ($users as $user)\n    <li>{{ $user->name }}</li>\n@endforeach\n\n@extends('layouts.app')\n@section('contenido')\n    ..."
+  },
+  {
+    "enlace": "migrations",
+    "titulo": "Migrations",
+    "descripcion": "Control de versiones de la base de datos",
+    "contenido": "php artisan make:migration create_users_table\n\nSchema::create('users', function (Blueprint $table) {\n    $table->id();\n    $table->string('name');\n    $table->timestamps();\n});"
+  },
+  {
+    "enlace": "artisian",
+    "titulo": "Artisan CLI",
+    "descripcion": "Interfaz de línea de comandos para tareas comunes",
+    "contenido": "php artisan list\n\nphp artisan make:controller UserController\n\nphp artisan migrate"
+  },
+  {
+    "enlace": "testing",
+    "titulo": "Testing",
+    "descripcion": "Pruebas automatizadas para tu aplicación",
+    "contenido": "php artisan make:test UserTest\n\npublic function test_user_creation() {\n    $user = User::factory()->create();\n    $this->assertDatabaseHas('users', ['id' => $user->id]);\n}"
+  },
+  {
+    "enlace": "queues",
+    "titulo": "Queues",
+    "descripcion": "Procesamiento de tareas en segundo plano",
+    "contenido": "php artisan queue:work\n\ndispatch(new SendEmailJob($user));"
+  },
+  {
+    "enlace": "events",
+    "titulo": "Events & Listeners",
+    "descripcion": "Sistema de eventos para desacoplar lógica",
+    "contenido": "Event::listen(UserRegistered::class, SendWelcomeEmail::class);\n\nclass UserRegistered {\n    public $user;\n    public function __construct(User $user) {\n        $this->user = $user;\n    }\n}"
+  },
+  {
+    "enlace": "api",
+    "titulo": "API Resources",
+    "descripcion": "Transforma tus modelos en JSON fácilmente",
+    "contenido": "php artisan make:resource UserResource\n\npublic function toArray($request) {\n    return [\n        'id' => $this->id,\n        'name' => $this->name,\n        'email' => $this->email,\n    ];\n}"
+  }
+]

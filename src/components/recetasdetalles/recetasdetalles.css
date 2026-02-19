@@ -1,0 +1,94 @@
+/* ------------------------------
+        Detalles de receta
+-------------------------------- */
+
+.recipe-detail {
+  background: var(--color-bg);
+  min-height: 100vh;
+  padding: 4rem 1rem;
+}
+
+.recipe-detail-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Título */
+
+.recipe-detail-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+/* Tags */
+
+.recipe-detail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.recipe-detail-tag {
+  font-size: 0.8rem;
+  padding: 0.35rem 0.8rem;
+  background: rgba(99,102,241,0.1);
+  color: var(--color-primary-dark);
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+/* Descripcion */
+
+.recipe-detail-description {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: var(--color-text-muted);
+}
+
+/* Contenido código */
+
+.recipe-detail-content {
+  background: #0f172a;
+  color: #86efac;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  font-family: monospace;
+  font-size: 0.95rem;
+  overflow-x: auto;
+  box-shadow: var(--shadow-md);
+}
+
+/* Mensaje no encontrado */
+
+.recipe-not-found {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 4rem 0;
+  color: var(--color-text-muted);
+}
+
+/* Botón volver */
+
+.recipe-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+  padding: 0.6rem 1rem;
+  background: transparent;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.recipe-back-btn:hover {
+  background: var(--color-primary);
+  color: white;
+  transform: translateY(-2px);
+}

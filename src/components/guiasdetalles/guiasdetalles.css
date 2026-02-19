@@ -1,0 +1,77 @@
+/* ------------------------------
+        GUIDE DETAIL
+-------------------------------- */
+
+.guide-detail {
+  background: var(--color-bg);
+  min-height: 100vh;
+  padding: 4rem 1rem;
+}
+
+.guide-detail-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Botón volver */
+
+.guide-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+  padding: 0.6rem 1rem;
+  background: transparent;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.guide-back-btn:hover {
+  background: var(--color-primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Título */
+
+.guide-detail-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: var(--color-text);
+}
+
+/* Descripción */
+
+.guide-detail-description {
+  font-size: 1.2rem;
+  color: var(--color-text-muted);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* Contenido tipo código */
+
+.guide-detail-content {
+  background: #0f172a;
+  color: #86efac;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  font-family: monospace;
+  font-size: 0.95rem;
+  overflow-x: auto;
+  box-shadow: var(--shadow-md);
+}
+
+/* Mensaje de tema no encontrado */
+
+.guide-not-found {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 4rem 0;
+  color: #dc2626; /* rojo */
+}

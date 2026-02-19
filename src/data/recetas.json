@@ -1,0 +1,37 @@
+[
+  {
+    "enlace": "n-plus-1",
+    "titulo": "Evitar problema N+1",
+    "tags": ["eloquent", "performance"],
+    "descripcion": "Carga relaciones de forma eficiente",
+    "contenido": "Mal:\n$users = User::all();\nforeach($users as $u) echo $u->posts->count();\n\nBien:\n$users = User::with('posts')->get();"
+  },
+  {
+    "enlace": "soft-deletes",
+    "titulo": "Soft Deletes",
+    "tags": ["eloquent", "database"],
+    "descripcion": "Eliminar registros sin borrarlos físicamente",
+    "contenido": "use SoftDeletes;\n\n$table->softDeletes();\n\nPost::withTrashed()->get();\nPost::onlyTrashed()->get();"
+  },
+  {
+    "enlace": "accessors-mutators",
+    "titulo": "Accessors y Mutators",
+    "tags": ["eloquent", "modelos"],
+    "descripcion": "Modificar atributos al acceder o asignar",
+    "contenido": "// Accessor\npublic function getFullNameAttribute() {\n  return $this->first_name . ' ' . $this->last_name;\n}\n\n// Mutator\npublic function setPasswordAttribute($value) {\n  $this->attributes['password'] = bcrypt($value);\n}"
+  },
+  {
+    "enlace": "query-scopes",
+    "titulo": "Query Scopes",
+    "tags": ["eloquent", "modelos"],
+    "descripcion": "Definir consultas reutilizables en el modelo",
+    "contenido": "// Scope local\npublic function scopeActive($query) {\n  return $query->where('active', 1);\n}\n\n// Uso\n$users = User::active()->get();"
+  },
+  {
+    "enlace": "mass-assignment",
+    "titulo": "Mass Assignment",
+    "tags": ["eloquent", "seguridad"],
+    "descripcion": "Proteger contra asignación masiva no deseada",
+    "contenido": "// En el modelo\nprotected $fillable = ['name', 'email'];\n// O\nprotected $guarded = ['is_admin'];"
+  }
+]

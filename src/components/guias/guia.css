@@ -1,0 +1,77 @@
+/* ------------------------------
+        GUIDE PAGE
+-------------------------------- */
+
+.guide-page {
+  background: var(--color-bg);
+  min-height: 100vh;
+  padding: 4rem 1rem;
+}
+
+.guide-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Título */
+
+.guide-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--color-text);
+}
+
+/* Grid */
+
+.guide-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .guide-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .guide-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* Card */
+
+.guide-card {
+  display: block;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
+  color: var(--color-text);
+  transition: var(--transition);
+}
+
+.guide-card:hover {
+  box-shadow: var(--shadow-hover);
+  border-color: var(--color-primary);
+  transform: translateY(-3px);
+}
+
+/* Card contenido */
+
+.guide-card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.guide-card-description {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  line-height: 1.5;
+}

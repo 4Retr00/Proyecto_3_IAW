@@ -1,0 +1,97 @@
+[
+  {
+    "pregunta": "¿Qué es Laravel?",
+    "options": [
+      "Un framework de Java",
+      "Un framework de PHP",
+      "Un CMS",
+      "Una base de datos"
+    ],
+    "correct": 1
+  },
+  {
+    "pregunta": "¿Qué comando crea un controlador?",
+    "options": [
+      "php artisan make:model",
+      "php artisan make:controller",
+      "php artisan create:controller",
+      "artisan new controller"
+    ],
+    "correct": 1
+  },
+  {
+    "pregunta": "¿Qué es una migration?",
+    "options": [
+      "Un controlador",
+      "Un sistema de rutas",
+      "Un archivo para definir tablas en la BD",
+      "Un middleware"
+    ],
+    "correct": 2
+  },
+  {
+    "pregunta": "¿Qué motor de plantillas usa Laravel?",
+    "options": ["Twig", "Blade", "Vue", "React"],
+    "correct": 1
+  },
+  {
+    "pregunta": "¿Qué archivo define las rutas web?",
+    "options": [
+      "routes/web.php",
+      "config/routes.php",
+      "app/routes.php",
+      "routes/api.php"
+    ],
+    "correct": 0
+  },
+  {
+    "pregunta": "¿Qué es Eloquent?",
+    "options": [
+      "Un ORM",
+      "Un servidor",
+      "Un paquete npm",
+      "Un middleware"
+    ],
+    "correct": 0
+  },
+  {
+    "pregunta": "¿Qué comando ejecuta migraciones?",
+    "options": [
+      "php artisan migrate",
+      "php artisan db",
+      "php artisan run",
+      "php artisan start"
+    ],
+    "correct": 0
+  },
+  {
+    "pregunta": "¿Qué es un Seeder?",
+    "options": [
+      "Un middleware",
+      "Un archivo para datos de prueba",
+      "Una vista",
+      "Un controlador"
+    ],
+    "correct": 1
+  },
+  {
+    "pregunta": "¿Qué es una Facade?",
+    "options": [
+      "Una vista",
+      "Un helper visual",
+      "Una interfaz estática a servicios",
+      "Un modelo"
+    ],
+    "correct": 2
+  },
+  {
+    "pregunta": "¿Qué patrón usa Laravel?",
+    "options": [
+      "MVC",
+      "Singleton",
+      "Factory",
+      "Observer"
+    ],
+    "correct": 0
+  }
+]

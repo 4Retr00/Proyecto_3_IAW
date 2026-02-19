@@ -1,0 +1,42 @@
+[
+  {
+    "enlace": "portfolio-laravel",
+    "titulo": "Portfolio Laravel",
+    "objetivo": "Crear un portfolio profesional con Laravel",
+    "modulos": ["Auth", "Blade", "Eloquent"],
+    "stack": "Laravel 12, MySQL, Tailwind",
+    "dificultad": "Media",
+    "images": ["portfolio-1.jpeg", "portfolio-2.jpg"],
+    "descripcion": "Proyecto de portfolio que muestra habilidades y proyectos previos."
+  },
+  {
+    "enlace": "blog-laravel",
+    "titulo": "Blog Laravel",
+    "objetivo": "Crear un blog completo con posts y comentarios",
+    "modulos": ["Auth", "Eloquent", "Middleware"],
+    "stack": "Laravel 12, PostgreSQL, Blade",
+    "dificultad": "Media-Alta",
+    "images": ["blog-1.jpg", "blog-2.png"],
+    "descripcion": "Blog con panel de administración, comentarios y gestión de posts."
+  },
+  {
+    "enlace": "ecommerce-laravel",
+    "titulo": "Ecommerce Laravel",
+    "objetivo": "Tienda online básica sin backend real",
+    "modulos": ["Blade", "Eloquent", "Controllers"],
+    "stack": "Laravel 12, Bootstrap, SQLite",
+    "dificultad": "Alta",
+    "images": ["ecommerce-1.jpg", "ecommerce-2.jpg"],
+    "descripcion": "Simulación de ecommerce con catálogo y carrito de compras."
+  },
+  {
+    "enlace": "crm-laravel",
+    "titulo": "CRM Laravel",
+    "objetivo": "Sistema de gestión de clientes y tareas",
+    "modulos": ["Auth", "Eloquent", "Controllers"],
+    "stack": "Laravel 12, Tailwind, MySQL",
+    "dificultad": "Alta",
+    "images": ["crm-1.png", "crm-2.png"],
+    "descripcion": "Simulación de CRM para gestión de clientes y proyectos."
+  }
+]
